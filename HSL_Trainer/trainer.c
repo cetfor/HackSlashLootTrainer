@@ -59,8 +59,12 @@ int main()
 			break;
 		}
 
-		if(selection != 0)
-			getchar(); getchar();
+		// If a non-exit option is selected, pause menu so
+		// the user can read the results of their option.
+		if (selection != 0) {
+			getchar();
+			getchar(); 
+		}
 	}
 	
 	CloseHandle(hTarget);
