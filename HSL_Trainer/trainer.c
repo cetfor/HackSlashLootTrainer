@@ -54,6 +54,9 @@ int main()
 		case 1:
 			result = ModifyHealth(hTarget, playerStatsPointer);
 			break;
+		case 2:
+			result = ModifyDefense(hTarget, playerStatsPointer);
+			break;
 		default:
 			printf("Please enter a valid selection.\n");
 			break;

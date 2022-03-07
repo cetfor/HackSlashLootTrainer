@@ -12,6 +12,7 @@ enum TRAINER_ERRORS
 	TERROR_OPENPROC_FAILED,
 	TERROR_GET_BASE_ADDR_FAILED,
 	TERROR_MODIFY_HEALTH_FAILED,
+	TERROR_MODIFY_DEFENSE_FAILED,
 };
 
 // Helpers
@@ -23,3 +24,4 @@ void PrintMenuOptions(void);
 
 // Menu options
 int ModifyHealth(HANDLE hTarget, void* playerStatsPointer);
+int ModifyDefense(HANDLE hTarget, void* playerStatsPointer);
